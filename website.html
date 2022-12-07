@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> construction website </title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- social media links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="website.css">
+    
+    <!-- services section read more -->
+    <!-- <style>
+        #more {display: none;}
+    </style> -->
+
+</head>
+<body>
+
+
+<!-- header section starts  -->
+
+<header>
+
+    <!-- <input type="checkbox" name="" id="toggler"> -->
+    <!-- <label for="toggler" class="fas fa-bars"></label> -->
+
+    <a href="#"><img src="C:\Users\aspir\Dropbox\My PC (LAPTOP-QVQG9AQ3)\Downloads\logo111.png" height="60"></a>
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#services">services</a>
+        <a href="#projects">projects</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+    </nav>
+
+    <div class="icons"> 
+        <!-- <a href="#" class="fas fa-search">Search Here</a> -->
+        <input type="search" name="mysearch" id="srch" placeholder="search here" class="fas fa-search">
+        <!-- <div id="srch"><Span>Search here:</span><input type="search" name="mysearch"></div> -->
+    </div>
+</header>
+
+<!-- header section ends -->
+<!-- home section starts  -->
+
+<section class="home" id="home">
+<div class="transbox">
+    <div class="content">
+        <h3 style="color:rgb(250, 116, 7);">Sunrise Constructions</h3>
+        <span style="color:rgb(0, 0, 0);">Your ultimate construction patners</span><br>
+        <a href="#about" class="btn">EXPLORE MORE</a>
+    </div>
+</div>   
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span> about </span> us </h1>
+
+    <div class="row">
+
+        <div class="video-container">
+            <video src="C:\Users\aspir\html images\html images\html images\video.mp4" loop autoplay muted></video>
+        </div>
+
+        <div class="content">
+            <h3>why choose us?</h3>
+            <p>Sunrise Constructions is a Asia based construction company specialising in residential construction with a high-end finish and attention to detail.We appreciate both great design and quality craftsmanship. Specialising in timber framed homes, we love working with our clients to create unique and custom projects. The versatility that timber offers in terms of flexibility and speed of construction are why we love utilising this building technique.
+            With Asia's climate, it is always important to consider passive design and what construction materials can be used to improve this further. We always look to utiilise the latest products for our clients that are both cost effective and efficient.</p>
+            <a href="#services" class="btn">learn more</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- icons section starts  -->
+<script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+      }
+    }
+    </script>
+
+<section class="icons-container" id="services">
+    <h1 class="heading"> our <span> services </span> </h1>
+
+<div class="row">
+
+    <div class="services">
+        <img src="C:\Users\aspir\Dropbox\My PC (LAPTOP-QVQG9AQ3)\Downloads\renovation.png" alt="">
+        <div class="info">
+            <span>Renovation
+            <p>With 200+ projects completed, </span><span id="dots1">...</span><span id="more1">we have renovated many old homes and offices into modern state-of-the art spaces! we take pride in the detalled 5 star reviews given to us by our esteemed customers.</span></p><br>
+            <button onclick="myFunction1()" id="myBtn1">Read more</button>
+        </div>
+    </div>
+    <script>
+        function myFunction1() {
+          var dots = document.getElementById("dots1");
+          var moreText = document.getElementById("more1");
+          var btnText = document.getElementById("myBtn1");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+        </script>
+    
+
+    <div class="services">
+        <img src="C:\Users\aspir\Dropbox\My PC (LAPTOP-QVQG9AQ3)\Downloads\roof repair.jpeg" alt="">
+        <div class="info">
+            <span>Roof Repairing
+            <p>Protect your home from harsh weather,</span><span id="dots2">...</span> <span id="more2">humidity and leaks with professional roof repair from Quality Roofing Solutions.With Quality Roofing Solutions, you can count on fast service, work of the highest caliber and reasonable rates that stay within your budget.</span></p><br>
+            <button onclick="myFunction2()" id="myBtn2">Read more</button>
+        </div>
+    </div>
+    <script>
+        function myFunction2() { //finds function
+            var dots = document.getElementById("dots2"); //returns element that has the ID attribute with value, searches for dots
+            var moreText = document.getElementById("more2"); // '' '' searches for more
+            var btnText = document.getElementById("myBtn2"); // '' '' searches for myBtn
+        
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more"; //button says read more to show more text
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less"; //button says read less to show less text
+                moreText.style.display = "inline";
+            }
+        }</script>
+    
+    <div class="services">
+        <img src="C:\Users\aspir\Dropbox\My PC (LAPTOP-QVQG9AQ3)\Downloads\interior icon.png" alt="">
+        <div class="info">
+            <span>Interior
+            <p>Every single wall and</span><span id="dots3">...</span> <span id="more3">corner of your house represents something, and it is highly crucial to have elements to enhance its character, while adding to the aesthetics of the room.</span></p><br>
+            <button onclick="myFunction3()" id="myBtn3">Read more</button>
+        </div>
+    </div>
+    <script>
+        function myFunction3() { //finds function
+            var dots = document.getElementById("dots3"); //returns element that has the ID attribute with value, searches for dots
+            var moreText = document.getElementById("more3"); // '' '' searches for more
+            var btnText = document.getElementById("myBtn3"); // '' '' searches for myBtn
+        
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more"; //button says read more to show more text
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less"; //button says read less to show less text
+                moreText.style.display = "inline";
+            }
+        }</script>
+
+    <div class="services">
+        <img src="C:\Users\aspir\Dropbox\My PC (LAPTOP-QVQG9AQ3)\Downloads\plumbing.jpg" alt="">
+        <div class="info">
+            <span>Plumbing
+            <p> we provides premier plumbing</span><span id="dots4">...</span> <span id="more4">services.Plumbing maintenance isn’t fun to think about, but when something goes wrong with your plumbing, you’ll want to address the problem as soon as possible.</span></p><br>
+            <button onclick="myFunction4()" id="myBtn4">Read more</button>
+        </div>
+    </div>
+    <script>
+        function myFunction4() { //finds function
+            var dots = document.getElementById("dots4"); //returns element that has the ID attribute with value, searches for dots
+            var moreText = document.getElementById("more4"); // '' '' searches for more
+            var btnText = document.getElementById("myBtn4"); // '' '' searches for myBtn
+        
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more"; //button says read more to show more text
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less"; //button says read less to show less text
+                moreText.style.display = "inline";
+            }
+        }</script>
+
+    <div class="services">
+        <img src="C:\Users\aspir\Dropbox\My PC (LAPTOP-QVQG9AQ3)\Downloads\architect.jpg" alt="">
+        <div class="info">
+            <span>Architectural
+            <p>It is a multi-disciplinary practice encompassing master planning,</span><span id="dots5">...</span> <span id="more5">architecture, and interior design. The nature of the practice has been to use the sun and the wind to our advantage to craft environments that are ecologically sound and naturally beautiful.</span></p>
+            <button onclick="myFunction5()" id="myBtn5">Read more</button>
+        </div>
+    </div>
+    <script>
+        function myFunction5() { //finds function
+            var dots = document.getElementById("dots5"); //returns element that has the ID attribute with value, searches for dots
+            var moreText = document.getElementById("more5"); // '' '' searches for more
+            var btnText = document.getElementById("myBtn5"); // '' '' searches for myBtn
+        
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more"; //button says read more to show more text
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less"; //button says read less to show less text
+                moreText.style.display = "inline";
+            }
+        }</script>
+
+    <div class="services">
+        <img src="C:\Users\aspir\Dropbox\My PC (LAPTOP-QVQG9AQ3)\Downloads\glazing.png" alt="">
+        <div class="info">
+            <span>Glazing
+            <p>We provide various turnkey architectural facade </span><span id="dots6">...</span> <span id="more6"> solutions where we translate the vision of our clients into reality. Our Design, Manufacturing and Project Management facilities are amongst the best in the country.</span></p>
+            <button onclick="myFunction6()" id="myBtn6">Read more</button>
+        </div>
+    </div>
+    <script>
+        function myFunction6() { //finds function
+            var dots = document.getElementById("dots6"); //returns element that has the ID attribute with value, searches for dots
+            var moreText = document.getElementById("more6"); // '' '' searches for more
+            var btnText = document.getElementById("myBtn6"); // '' '' searches for myBtn
+        
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more"; //button says read more to show more text
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less"; //button says read less to show less text
+                moreText.style.display = "inline";
+            }
+        }</script>
+    
+</div>  
+
+</section>
+
+<!-- services section ends -->
+
+<!-- projects section starts  -->
+
+<section class="projects" id="projects">
+
+    <h1 class="heading"> Our <span> Projects </span> </h1>
+    <!-- <h3>Recently Completed</h3> -->
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="C:\Users\aspir\Dropbox\My PC (LAPTOP-QVQG9AQ3)\Downloads\residential.jpg" alt="">
+                <div class="icons">
+                    <a href="res.html" class="cart-btn"> Residential </a>
+                </div>
+            </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="C:\Users\aspir\html images\html images\html images\commercial.jpg">
+                <div class="icons">
+                    <a href="comm.html" class="cart-btn">Commercial</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="C:\Users\aspir\html images\html images\html images\industrial.jpg">
+                <div class="icons">
+                    <a href="ind.html" class="cart-btn">Industrial</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- projects section ends -->
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+<h1 class="heading"> customer's <span>review</span> </h1>
+
+<div class="box-container">
+
+    <div class="box">
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <p>ighly professional and experienced team for design of my 1800sq.ft house. Team listen and coordinated with my concern very patiently.</p>
+        <div class="user">
+            <img src="C:\Users\aspir\html images\html images\html images\customer1.jfif" alt="">
+            <div class="user-info">
+                <h3>Name</h3>
+                <span>happy customer</span>
+            </div>
+        </div>
+        <span class="fas fa-quote-right"></span>
+    </div>
+
+    <div class="box">
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <p>Very professional & Polite, I like the way you guys work, used your architect services and all the designs were good.</p>
+        <div class="user">
+            <img src="C:\Users\aspir\html images\html images\html images\customer2.jpg" alt="">
+            <div class="user-info">
+                <h3>Name</h3>
+                <span>happy customer</span>
+            </div>
+        </div>
+        <span class="fas fa-quote-right"></span>
+    </div>
+
+    <div class="box">
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <p>Good customer support explaining all construction details clearly and correctly. Builder specifications provided were of very much appreciated reflecting good quality and branded materials used for construction.</p>
+        <div class="user">
+            <img src="C:\Users\aspir\html images\html images\html images\customer3.jpg" alt="">
+            <div class="user-info">
+                <h3>Name</h3>
+                <span>happy customer</span>
+            </div>
+        </div>
+        <span class="fas fa-quote-right"></span>
+    </div>
+
+</div>
+    
+</section>
+
+<!-- review section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span> contact </span> us </h1>
+
+    <div class="row">
+
+        <form action="">
+            <input type="text" placeholder="name" class="box">
+            <input type="email" placeholder="email" class="box">
+            <input type="tel" placeholder="number" class="box">
+            <textarea name="" class="box" placeholder="message" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="send message" class="btn">
+        </form>
+
+        <div class="image">
+            <img src="https://media.istockphoto.com/id/178384154/photo/construction-worker.jpg?s=612x612&w=0&k=20&c=ppPC4yxhXIlEUYITOxFkUlSXYzPbQP-bpno6Uujmcv8=" alt="">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Quick links</h3>
+            <a href="#">Home</a>
+            <a href="#about">About us</a>
+            <a href="#projects">Projects</a>
+            <a href="#review">Review</a>
+            <a href="#">Testimonials</a>
+            <a href="#">Blog</a>
+            <a href="#">FAQ</a>
+        </div>
+        <!-- Add font awesome icons -->
+        <div class="box">
+            <h3>Social media</h3>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-pinterest"></a>
+        </div>
+
+        <div class="box">
+            <h3>Head Office</h3>
+            <p class="headoffice">242,Dada colony,Industrial Area,Jalandhar,Punjab
+                <br><br>Postal Code:144004 <br><br>
+            Office Time:9 a.m-6 p.m
+            </p>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#">+91 0123456789</a>
+            <a href="#">sunrise99@gmail.com</a>
+            <a href="#">Punjab,India</a>
+        </div>
+
+
+    </div>
+
+    <div class="credit"><span>| all rights reserved |</span> </div>
+
+</section>
+
+<!-- footer section ends -->
+   
+</body>
+</html>
